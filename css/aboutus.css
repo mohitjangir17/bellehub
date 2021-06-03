@@ -1,0 +1,21 @@
+.headcontainer11 {
+    background-color: #eee;
+}
+.pcontent {
+    margin: 4em 7em .5em 7em;
+    line-height: 2.3em;
+    font-size: 14px;
+}
+.link {
+    color: #337ab7;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.heading {
+    margin-left: 4.1em;
+    font-weight: 400;
+    font-size: 23px;
+}

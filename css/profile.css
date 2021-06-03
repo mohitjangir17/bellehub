@@ -1,0 +1,157 @@
+body {
+    background-color: #eee;
+    
+}
+:focus {
+    outline: none;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.profilecontainer {
+    display: block;
+}
+div.rightinfo {
+    width: 40%;
+    margin: -19em 3em 1em 1em;
+    float:right;
+}
+#btnswap {
+    float: right;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+.rightinfo input {
+    width: 90%;
+    height: 30px;
+    display: block;
+    background-color: white;
+    margin-top: .5em;
+    border: solid grey .5px;
+
+}
+.rightinfo input:focus {
+    box-shadow: #337ab7 0px 0px 5px;
+    outline: none;
+}
+.rightinfo label {
+    font-weight: bold;
+}
+.changepassword {
+    float: right;
+    margin-right: 3em;
+    color: #337ab7;
+    text-decoration: none;
+}
+.changepassword:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+#btnswap button {
+    width: fit-content;
+    padding: .5em 1em;
+    background-color: #eee;
+    border: solid rgba(128, 128, 128, 0.267) 1px;
+    color: black;
+    clear: left;
+}
+#btnswap button:hover{
+    cursor: pointer;
+}
+#btnswap button:active {
+    width: fit-content;
+    padding: .5em 1em;
+    background-color: white;
+    border: solid rgba(128, 128, 128, 0.267) 1px;
+    color: black;
+}
+img {
+    height: 300px;
+    margin-left: 26em;
+    margin-top: 3em;
+}
+.uploadfile {
+    position: absolute;
+    left: 31.2em;
+    top: 34em;
+}
+.name {
+    margin-left: 8.5em;
+    position: absolute;
+}
+footer {
+    margin-top: 10em;
+}
+.overlayprofile {
+    display: none;
+}
+.timebtn button {
+    background-color:#EEE;
+    border: none;
+    width: fit-content;
+    color: black;
+    margin-top: 5em;
+}
+.timebtn button:hover {
+    background-color: white;
+    cursor: pointer;
+
+}
+span.timebtn {
+    margin-left: 11em;
+}
+.datespan p {
+    line-height: 29px;
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: 7em;
+    margin-top: 3em;
+
+}
+.midcon {
+    display: block;
+    margin-left: 22em;
+    margin-top: -7.5em;
+    font-size: 14px;
+}
+.rightcon {
+    font-size: 14px;
+    margin-top: -8.5em;
+    margin-left: 45em;
+}
+.rightconbtn {
+    
+    margin-left: 60em;
+    margin-top: -10em;
+}
+.rightconbtn button {
+    width: 16em;
+    color: black;
+    margin-top: 1em;
+    background-color: white;
+    border: rgba(128, 128, 128, 0.411) solid .2px;
+}
+.rightconbtn button:hover {
+    background-color: rgb(168, 168, 168);
+}
+.timebtn {
+    border-bottom: solid rgba(179, 179, 179, 0.466) .1px;
+    display: inline-flex;
+    width: 110em;
+}
+.hideoverlay {
+    display: none;
+}
+.showoverlay {
+    display: block;
+    animation: fadein .4s ease-in ;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,32 @@
+.contentcontainer {
+    background-color: white;
+    display: block;
+    margin: 1em 20em;
+    padding: 3em 1em;
+}
+table th {
+    display: block;
+    text-align: left;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    
+}
+table td {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: left;
+    display: block;
+    padding-left: 10em;
+    float: left;
+}
+table tr {
+    display: inline-flex;
+    border-top: solid grey 1px;
+    width: 100%;
+}
+.ma-btn {
+    width: 51em;
+    text-align: center;
+    margin-top: 1em;
+
+}
