@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <a class="toplogo" href="index.html">BELLE
+            HUB</a>
+        <form action="#">
+            <input type="text" placeholder="What would you like to book?">
+            <input type="text" placeholder="Postcode or Area?">
+            <button>Search</button>
+        </form>
+        <button class="login" class="toploginbtn">Login</button>
+        <nav>
+            <ul class="nav">
+                <li><a href="details.html">MASSAGE</a></li>
+                <li><a href="details.html">NAILS</a></li>
+                <li><a href="details.html">HAIR</a></li>
+                <li><a href="details.html">HAIR REMOVAL</a></li>
+                <li><a href="details.html">AESHTHTICS</a></li>
+                <li><a href="details.html">BARBER</a></li>
+                <li><a href="details.html">MAKEUP</a></li>
+                <li><a href="details.html">SPA</a></li>
+            </ul>
+        </nav>
+    </div>
+    <span id="btnswap"><a href="#"><button id="profileswapbtn">Profile</button></a>
+        <a href="#"><button id="appointmentswapbtn">Appointments</button></a></span> <br>
+    <div id="profilecontainer" class="profilecontainer">
+        <div>
+            <div class="name">
+                <h3>Profile</h3>
+                <p>####Profile</p>
+            </div>
+            <img src="images/pic4.jpg" alt="profile pic">
+            <input class="uploadfile" type="file" placeholder="Add a Profile Pic">
+            <div class="rightinfo">
+
+                <a class="changepassword" href="#">Change Password</a><br>
+                <label for="Name">Name:</label><br>
+                <input type="text" name="name:" id=""><br>
+                <label for="LName">Last Name:</label><br>
+                <input type="text" name="last Name:" id=""><br>
+                <label for="Email">Email:</label><br>
+                <input type="text" name="Email:" id=""><br>
+                <label for="Phone">Phone:</label><br>
+                <input type="text" name="Phone:" id=""><br>
+                <a href="#"><button>Save</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="overlayprofile" class="overlayprofile">
+        <div class="name">
+            <h3>Profile</h3>
+        </div>
+        <span class="timebtn">
+            <a href="#"><button>CURRENT</button></a>
+            <a href="#"><button>PREVIOUS</button></a>
+        </span>
+        <div class="table">
+            <span class="datespan">
+                <p>OCT <br>26</p>
+            </span><br>
+            <div class="infocontainer">
+                <div class="midcon">
+                    <p>Service: Grinberg Method</p>
+                    <p>Learn to be wel</p>
+                    <p>07463861218</p>
+                    <p>charlotte@learntobewell.co.uk</p>
+                </div>
+                <div class="rightcon">
+                    <p>Time: 14:30 - 15:00</p>
+                    <p>Price: £ 30.00</p>
+                    <p>Payment Method: Directly to Salon</p>
+                    <p>Where: Learn to be well <br>
+                        4 Mandeville Place <br>
+                        Central London - W1U 2BG</p>
+                </div>
+            </div>
+            <div class="rightconbtn">
+                <a href="#"><button>BOOK ANOTHER</button></a><br>
+                <a href="#"><button>CANCEL</button></a></div>
+        </div>
+    </div>
+    <footer>
+        <p>Vaniday is the place to find and book beauty & wellness experiences. Customers can discover new services
+            and salons, book appointments and get inspired, with our app and on our website. Salons can showcase
+            their work, connect with new and existing clients, and grow their business. The company is backed by
+            Rocket Internet, the leading internet platform outside the US and China, which has already built other
+            successful beauty and lifestyle companies such as Glossybox and Dafiti. To learn more about Vaniday,
+            visit our website at www.vaniday.co.uk.<a href="#">Read more</a>
+        </p>
+        <ul>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Policy</a></li>
+        </ul>
+    </footer>
+    <script>
+        var pflswapbtn = document.getElementById('profileswapbtn')
+        var apntswapbtn = document.getElementById('appointmentswapbtn')
+        var overlayprofile = document.getElementById('overlayprofile')
+        var profilecont = document.getElementById('profilecontainer')
+
+        pflswapbtn.addEventListener('click', function (e) {
+            profilecont.classList.add('showoverlay');
+            overlayprofile.classList.remove('showoverlay');
+            pflswapbtn.style.backgroundColor = 'white';
+            apntswapbtn.style.backgroundColor = '#eee';
+            e.preventDefault();
+        });
+
+        apntswapbtn.addEventListener('click', function (e) {
+            overlayprofile.classList.add('showoverlay');
+            profilecont.classList.remove('showoverlay');
+            profilecont.classList.add('hideoverlay');
+            apntswapbtn.style.backgroundColor = 'white';
+            pflswapbtn.style.backgroundColor = '#eee';
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>

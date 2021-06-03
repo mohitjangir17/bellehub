@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <a  href="#"><button id="entrbtn">LOGIN</button></a>
+    <div id="overlay" class="overlay">
+        <a href="#"><button id="extbtn">EXIT</button></a>
+        <section  class="overlaycontent">
+        <button class="blubtn">CONNECT WITH FACEBOOK</button><br>
+        <P>Don't worry, we never post on your behalf</P>
+        <SPAN>OR</SPAN><br>
+        <input type="text" placeholder="Email Address"><br>
+        <input type="text" placeholder="Password"><br>
+        <button>SIGN UP</button><br>
+        <p>Do you have an account?<a href="#">Login</p>
+        </section>
+        </div>
+        <script>
+            var entrbtn =document.getElementById('entrbtn')
+            var overlay =document.getElementById('overlay')
+            var extbtn =document.getElementById('extbtn')
+
+            entrbtn.addEventListener('click' ,function(e) {
+            overlay.classList.toggle('show');
+            e.preventDefault();    
+            } );
+
+            extbtn.addEventListener('click' ,function(e) {
+            overlay.classList.remove('show');
+            e.preventDefault();    
+            } );
+        </script>
+        
+</body>
+</html>

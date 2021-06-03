@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="overlay" class="overlay">
+        <a href="#"><button id="extbtn">EXIT</button></a>
+        <section  class="overlaycontent">
+        <button class="blubtn" >LOGIN WITH FACEBOOK</button><br>
+        <P>Don't worry, we never post on your behalf</P>
+        <SPAN>OR</SPAN><br>
+        <input type="text" placeholder="Email Address"><br>
+        <input type="text" placeholder="Password"><br>
+        <button class="signupbtn">SIGN UP</button><br>
+        <p>Do you have an account?<a href="#">Login</p>
+        </section>
+        </div>
+    <div class="header">
+        <a class="toplogo" href="index.html">BELLE HUB</a>
+        <button class="login" id="entrbtnn" >Login</button>
+        <ul class="nav">
+            <li><a href="details.html">'MASSAGE'</a></li> 
+            <li><a href="details.html">NAILS</a></li>
+            <li><a href="details.html">HAIR</a></li>
+            <li><a href="details.html">HAIR REMOVAL</a></li>
+            <li><a href="details.html">AESHTHTICS</a></li>
+            <li><a href="details.html">BARBER</a></li>
+            <li><a href="details.html">MAKEUP</a></li>
+            <li><a href="details.html">SPA</a></li>
+        </ul>
+
+        <h1 class="herotxt">Find and book beauty & wellness services Anywhere, anytime</h1>
+
+        <form action="#">
+            <input type="text" placeholder="What would you like to book?">
+            <input type="text" placeholder="Postcode or Area?">
+            <button>Search</button>
+        </form>
+    </div>
+    <section class="grey-container">
+        <h4>1.Discover</h4>
+        <p>Search for beauty & wellness salons in your area</p>
+        <h4>2.Book</h4>
+        <p>Choose your service and book an appointment directly from the salon's calendar</p>
+        <h4>3.Enjoy</h4>
+        <p>Sit back and enjoy your unique beauty & wellness experience</p>
+    </section>
+    <div class="container">
+        <h2>Feature on</h2>
+        <ul>
+            <li>Tech Crunch</li><br>
+            <li>Get The Gloss</li><br>
+            <li>Style Nest</li><br>
+        </ul>
+        <article class="para">
+            <p>Vaniday, the online marketplace for beauty and wellness professionals co-founded by e-commerce behemoth
+                and ‘startup builder’ Rocket Internet, has bagged its first major round of funding.</p>
+
+            <p>Bridging the gap between personalised salon services, professionals that fit the consumer’s particular
+                requirements and more bespoke online booking experiences, Vaniday is the new one-stop-shop wellness 
+               .</p>
+
+            <p>Vaniday is the new beauty and wellness app to help you find a much needed or purely indulgent treatment
+                at the tap of a finger</p>
+        </article>
+    </div>
+    <section class="holder">
+        <h2>Anywhere,Anytime</h2>
+        <img src="images/2.png" alt="Phone Containing our website">
+    </section>
+    <footer>
+        <p style="margin-bottom: 2em;">Vaniday is the place to find and book beauty & wellness experiences. Customers can discover new services and
+            salons, book appointments and get inspired, with our app and on our website. Salons can showcase their work,
+            connect with new and existing clients, and grow their business. The company is backed by Rocket Internet,
+            the leading internet platform outside the US and China, which has already built other successful beauty and
+            lifestyle companies such as Glossybox and Dafiti. To learn more about Vaniday, visit our website at
+            www.vaniday.co.uk.<a href="#">Read more</a></p>
+        <ul>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Policy</a></li>
+        </ul>
+
+    </footer>
+    <script>
+        var entrbtn =document.getElementById('entrbtnn')
+        var overlay =document.getElementById('overlay')
+        var extbtn =document.getElementById('extbtn')
+
+        entrbtn.addEventListener('click' ,function(e) {
+        overlay.classList.toggle('show');
+        e.preventDefault();    
+        } );
+
+        extbtn.addEventListener('click' ,function(e) {
+        overlay.classList.remove('show');
+        e.preventDefault();    
+        } );         
+        </script>
+
+</body>
+
+</html>
